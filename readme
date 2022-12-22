@@ -1,0 +1,77 @@
+Problem Statement:
+Create two API’s which can perform the specified CRUD operations.The project structure should
+have models, middlewares, controllers and services. Write MongoDB queries to fetch, update,
+add or delete data from the specified collections. You can assume that the collections already
+exist in the database and just define the project structure.
+Customer API
+1. Get all customers List with status ACTIVE [GET]
+2. Delete customer. [DELETE]
+3. Create new customer [POST]
+Card API
+1. Get all Card List[GET]
+2. Create new card [POST]
+
+## customer schema
+{
+firstName: {
+        type: String,
+        required: true,
+    },
+    lastName: {
+        type: String,
+        required: true,
+    },
+    mobileNumber: {
+        type: String,
+        length: 10,
+        required: true,
+    },
+    DOB: {
+        type: Date,
+        required: true,
+    },
+    emailId: {
+        type: String,
+        required: true,
+    },
+    address: {
+        type: String,
+        required: true,
+    },
+    customerId: {
+        type: String,
+        status: true,
+    },
+    status: {
+        type: String,
+        enum: ["ACTIVE", "INACTIVE"],
+        default:"ACTIVE"
+    }
+}
+## card schema
+cardNumber: {
+        type: Number,
+        required: true
+    },
+    cardType: {
+        type: String,
+        required: true
+    },
+    customerName: {
+        type: String,
+        required: true,
+    },
+    status: {
+        type: String,
+        required: true,
+        enum: ["ACTIVE", "INACTIVE"],
+        default: "ACTIVE"
+    },
+    vision: {
+        type: String
+    },
+    customerId: {
+        required: true,
+        type:String,
+
+    }
