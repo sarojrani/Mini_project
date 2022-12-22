@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SumanB1432/radon-assignment3.git"
+    "url": "https://github.com/sarojrani/Mini_project.git"
   },
   "author": "saroj kumari",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SumanB1432/radon-assignment3/issues"
+    "url": "https://github.com/sarojrani/Mini_project.git/issues"
   },
-  "homepage": "https://github.com/SumanB1432/radon-assignment3#readme",
+  "homepage": "https://github.com/sarojrani/Mini_project.git#readme",
   "dependencies": {
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
